@@ -1,34 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/proposal.css">
-    <title>Project Proposal</title>
-</head>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="css/proposal.css">
+
+        <title>Project Proposal</title>
+    </head>
+
 <body>
-    <header>
-        <h1>Project Proposal: Photographer Web App </h1>
-    </header>
 
-    <section id="problem-description">
-        <h2>Problem Description</h2>
-        <p>
-             [For our project we want to create a photographer booking web app for a photographer friend of ours. Current photographer booking services such as 
-            <a href="https://www.flytographer.com" target="_blank">Flytographer</a> help people find photographers but at a very steep price. A personal more localized web app will provide
-            less competition, and more opportunity to get his name and reputation out there, as well as allow for more competitive pricing.]
-        </p>
+    <section class="site-column site-top">
+        <header>
+            <h1>Project Proposal: Photographer Web App </h1>
+        </header>
     </section>
 
-    <section id="app-description">
-        <h2>Proposed Application</h2>
-        <p>
-            [Describe the web app you will create to address the chosen problem. Explain who the users are, what kind of information they will view, and how they will interact with the app. Discuss how using this app will help solve the identified problem.]
-        </p>
-    </section>
+    <div class="container">
+        <section class="site-column site-left">
+            <ul>
+                <li><a href=""></a>Main Page</li>
+                <li><a href=""></a>Services</li>
+                <li><a href=""></a>Book Appointment</li>
 
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
+            </ul>
+        </section>
+        <section class="site-column site-center">
+            <section id="problem-description">
+
+                <h2>Problem Description</h2>
+
+                    <p>
+                        [For our project we want to create a photographer booking web app for a photographer friend of ours. Current photographer booking services such as 
+                        <a href="https://www.flytographer.com" target="_blank">Flytographer</a> help people find photographers but at a very steep price. A personal more localized web app will provide
+                        less competition, and more opportunity to get his name and reputation out there, as well as allow for more competitive pricing.]
+                    </p>
+
+            </section>
+
+            <section id="app-description">
+
+                <h2>Proposed Application</h2>
+                <p>
+                    [Describe the web app you will create to address the chosen problem. 
+                    Explain who the users are, what kind of information they will view, 
+                    and how they will interact with the app. Discuss how using this app will 
+                    help solve the identified problem.]
+                    The web app that we will be developing is a services based business app. 
+                    In which a client will be able to fill in a form, requesting whatever services they require, 
+                    on whichever date they require these services. The form ideally includes a interactive
+                    calendar linked to a calendar to check if a scheduling conflict exists then 
+                    if said conflict exists these dates would be blocked off.
+                    After completing the form and selecting the services package, the data from the form then 
+                    renders into an invoice for the business. 
+                    Bonus Idea: Having the location of where the services are being rendered, included in the work
+                    order, if for arguements sake a photo shoot was booked in Pensacola on 1/30/2024,
+                    and a different client was booking a photo shoot in Seattle on 1/31/2024 the app would 
+                    automatically pad that date out to 2/1/2024 adding the extra day as a travel day for 
+                    the freelancer added to the invoice
+                </p>
+
+            </section>
+           
+     </section>
+     <section class="site-right">
+        <form>
+            <label for="name">Name:            </label>
+            <input type="text" id="name" name="name"><br>
+          
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="phoneNo">PhoneNo:</label>
+            <input type="phoneNo" id="phoneNo" name="phoneNo"><br>
+          
+
+            <label for="phoneNo">PhoneNo:</label>
+            <input type="phoneNo" id="phoneNo" name="phoneNo"><br>
+
+            <label for="Day of Booking">Date:</label>
+            <input type="date" id="booking" name="booking">
+            
+            <p>What Photography package Would you like:</p>
+            <input type="checkbox" id="Prom" name="package" value="Prom">
+            <label for="Prom">Prom</label><br>
+            <input type="checkbox" id="Wedding" name="package" value="Wedding">
+            <label for="Wedding">Wedding</label><br>
+            <input type="checkbox" id="FamilyP" name="package" value="FamilyP">
+            <label for="FamilyP">Family Photo's</label><br>
+          
+            <input type="submit" value="Submit">
+          </form>
+    </section>
+    </div>
+    
+
+        <footer>
+
+            <p>&copy; 2024 Kylar Posey, Tjorvi Jonasson</p>
+
+        </footer>
+
+    
+
 </body>
 </html>
